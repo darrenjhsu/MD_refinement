@@ -1,0 +1,8 @@
+source leaprc.gaff2
+lig = loadmol2 Mpro-x10959_0_H_bcc.mol2 
+loadamberparams Mpro-x10959_0_H_bcc.frcmod
+check lig
+saveoff lig Mpro-x10959_0_H_bcc_sim.lib
+savepdb lig Mpro-x10959_0_H_bcc_sim.pdb
+saveamberparm lig Mpro-x10959_0_H_bcc_sim.prmtop Mpro-x10959_0_H_bcc_sim.rst7
+quit
